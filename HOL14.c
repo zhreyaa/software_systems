@@ -1,25 +1,40 @@
+#include<sys/select.h>
 #include<stdio.h>
-#include<unistd.h>
 #include<fcntl.h>
-#include<stdlib.h>
+#include<sys/time.h>
+#include<sys/types.h>
+#include<unistd.h>
 
-int main()
+int main(int argc,char *argv[])
 {
-	int flags,accessmode;
-	int fd=open("test.txt",O_WRONLY);
-	flags=fcntl(fd,F_GETFL);
-        if(flags==-1)
-	      exit(0);
-if(flags & O_SYNC)
-printf("Writes are synchronized\n");
+	if(argc!=2)
+	{
+		perror("Not given proper file!");
+		return -1;
+	}
 
-accessmode=flags&O_ACCMODE;
-if(accessmode==O_RDONLY)
-	printf("File is READ only\n");
-else if(accessmode==O_WRONLY||accessmode==O_RDWR)
-	printf("File is writable\n");
+        argv[1];
+        struct stat f_st;
 
+	if(stat(argv[1],&f_st)==-1)
+	{
+		perror("Error in stat\n");
+		return 0;
+	}
+
+	printf("%s \n",argv[1]);
+	printf("%u\n",f_st.st_mode);
+
+              switch (f_st.st_mode & S_IFMT) 
+           {
+           case S_IFBLK:  printf("block device\n");            break;
+           case S_IFCHR:  printf("character device\n");        break;
+           case S_IFDIR:  printf("directory\n");               break;
+           case S_IFIFO:  printf("FIFO/pipe\n");               break;
+           case S_IFLNK:  printf("symlink\n");                 break;
+           case S_IFREG:  printf("regular file\n");            break;
+           case S_IFSOCK: printf("socket\n");                  break;
+           default:       printf("unknown?\n");                break;
+ 	   }
 return 0;
 }
-
-
