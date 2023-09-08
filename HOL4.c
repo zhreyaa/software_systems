@@ -1,3 +1,12 @@
+/*
+SHREYA CHAVAN MT2023179
+
+Question 4:
+
+Write a program to open an existing file with read write mode. Try O_EXCL flag also.
+
+*/
+
 #include<stdio.h>
 #include<fcntl.h>
 
@@ -18,3 +27,4 @@ int main()
 	return 0;
 
 }
+

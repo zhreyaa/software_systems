@@ -1,3 +1,12 @@
+/*
+SHREYA CHAVAN MT2023179
+
+Question 3:
+
+Write a program to create a file and print the file descriptor value. Use creat ( ) system call
+
+*/
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -12,3 +21,5 @@ int main()
 	return 0;
 
 }
+
+// execute this program with ./a.out and then check status with ls -la/proc/pid

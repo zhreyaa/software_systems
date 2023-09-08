@@ -1,3 +1,14 @@
+/*
+SHREYA CHAVAN MT2023179
+
+Question 16:
+
+Write a program to perform mandatory locking.
+a. Implement write lock
+b. Implement read lock
+
+*/
+
 #include<unistd.h>
 #include<fcntl.h>
 #include<sys/types.h>
@@ -28,3 +39,6 @@ int main()
 	printf("finish\n");
 	return 0;
 }
+
+//use different terminals and see how you cannot access the critical section when a process is already accesing it
+

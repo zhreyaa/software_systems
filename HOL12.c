@@ -1,3 +1,12 @@
+/*
+SHREYA CHAVAN MT2023179
+
+Question 12:
+
+Write a program to find out the opening mode of a file. Use fcntl.
+
+*/
+
 #include<fcntl.h>
 #include<unistd.h>
 #include<stdio.h>

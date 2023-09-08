@@ -1,3 +1,13 @@
+/*
+SHREYA CHAVAN MT2023179
+
+Question 8:
+
+Write a program to open a file in read only mode, read line by line and display each line as it is read.
+Close the file when end of file is reached.
+
+*/
+
 #include<stdio.h>
 #include<unistd.h>
 #include<fcntl.h>
@@ -17,7 +27,7 @@ int main()
 	{
 		if(buf == 10)
 		{
-			printf("\n %s",line);
+			printf("%s \n",line);
 			n = 0;
 			memset(line, '\0', sizeof(line));
 		}
@@ -31,3 +41,4 @@ int main()
 
 	return 0;
 }
+

@@ -1,3 +1,12 @@
+/*
+SHREYA CHAVAN MT2023179
+
+Question 15:
+
+Write a program to display the environmental variable of the user (use environ).
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
