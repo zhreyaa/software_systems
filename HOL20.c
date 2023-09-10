@@ -5,6 +5,8 @@ Question 20:
 
 Find out the priority of your running program. Modify the priority with nice command.
 
+Date: 10th September 2023
+
 */
 
 #include<sys/types.h>

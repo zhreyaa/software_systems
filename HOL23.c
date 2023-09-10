@@ -5,6 +5,8 @@ Question 23:
 
 Write a program to create a Zombie state of the running program.
 
+Date: 10th September 2023
+
 */
 
 #include<stdio.h>

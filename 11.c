@@ -9,6 +9,8 @@ a. use dup
 b. use dup2
 c. use fcntl
 
+Date: 28th August 2023
+
 */
 
 #include<stdio.h>

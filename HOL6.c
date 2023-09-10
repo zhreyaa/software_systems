@@ -5,6 +5,8 @@ Question 6:
 
 Write a Write a program to take input from STDIN and display on STDOUT. Use only read/write system calls
 
+Date: 28th August 2023
+
 */
 
 #include<stdio.h>

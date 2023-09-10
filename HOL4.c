@@ -5,6 +5,8 @@ Question 4:
 
 Write a program to open an existing file with read write mode. Try O_EXCL flag also.
 
+Date: 28th August 2023
+
 */
 
 #include<stdio.h>

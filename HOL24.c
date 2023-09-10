@@ -5,6 +5,8 @@ Question 24:
 
 Write a program to create an orphan process.
 
+Date: 10th September 2023
+
 */
 
 #include<stdio.h>

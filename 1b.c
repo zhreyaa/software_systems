@@ -8,6 +8,8 @@ a. soft link (symlink system call)
 b. hard link (link system call)
 c. FIFO (mkfifo Library Function or mknod system call)
 
+Date: 28th August 2023
+
 */
 
 #include<stdio.h>

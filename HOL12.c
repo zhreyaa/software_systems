@@ -5,6 +5,8 @@ Question 12:
 
 Write a program to find out the opening mode of a file. Use fcntl.
 
+Date: 28th August 2023
+
 */
 
 #include<fcntl.h>

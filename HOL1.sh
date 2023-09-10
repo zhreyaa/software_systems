@@ -7,6 +7,8 @@
 #b. hard link (link system call)
 #c. FIFO (mkfifo Library Function or mknod system call)
 
+#Date: 28th August 2023
+
 #!/bin/bash
 filename="newfile.txt"
 softlink="sl.txt"

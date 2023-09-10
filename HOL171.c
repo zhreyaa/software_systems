@@ -8,6 +8,8 @@ Write a program to open a file, store a ticket number and exit. Write a separate
 open the file, implement write lock, read the ticket number, increment the number and print
 the new ticket number then close the file.
 
+Date: 28th August 2023
+
 */
 
 #include<sys/stat.h>

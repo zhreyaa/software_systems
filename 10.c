@@ -8,6 +8,8 @@ bytes (use lseek) and write again 10 bytes.
 a. check the return value of lseek
 b. open the file with od and check the empty spaces in between the data.
 
+Date: 28th August 2023
+
 */
 
 #include <stdio.h>

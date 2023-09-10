@@ -7,6 +7,8 @@ Write a program to perform mandatory locking.
 a. Implement write lock
 b. Implement read lock
 
+Date: 28th August 2023
+
 */
 
 #include<unistd.h>

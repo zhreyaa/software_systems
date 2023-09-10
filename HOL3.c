@@ -5,6 +5,8 @@ Question 3:
 
 Write a program to create a file and print the file descriptor value. Use creat ( ) system call
 
+Date: 28th August 2023
+
 */
 
 #include <sys/types.h>
